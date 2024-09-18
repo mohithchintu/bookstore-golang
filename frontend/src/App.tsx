@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import React from "react"
 import Layout from "./components/Layout"
-import Calendar from "./pages/Calendar"
-import Register from "./pages/Register"
-import Login from "./pages/Login"
+import Book from "./pages/Book"
+import Addbook from "./pages/Addbook"
+import UpdateQuantity from "./pages/Updatequantity"
 
 const App: React.FC = () => {
   return (
@@ -12,10 +12,9 @@ const App: React.FC = () => {
       <Layout >
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/calendar" element={<Calendar />} />
-
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/books" element={<Book />} />
+          <Route path="/add" element={<Addbook />} />
+          <Route path="/update" element={<UpdateQuantity />} />
         </Routes>
       </Layout>
     </BrowserRouter>
